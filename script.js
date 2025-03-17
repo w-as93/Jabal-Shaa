@@ -73,6 +73,19 @@ function toggleMenu() {
 
     menu.classList.toggle("active");
 
+    // إغلاق القائمة عند النقر خارجها
+    document.addEventListener("click", function closeMenu(event) {
+        if (!menu.contains(event.target) && !toggleIcon.contains(event.target)) {
+            menu.classList.remove("active");
+
+            // إعادة الأيقونة إلى "الخطوط" عند إغلاق القائمة
+            toggleIcon.classList.remove("bx-x");
+            toggleIcon.classList.add("bx-menu");
+
+            document.removeEventListener("click", closeMenu);
+        }
+    });
+
     // تبديل الأيقونة مع تأثير دوران ناعم
     if (menu.classList.contains("active")) {
         toggleIcon.classList.remove("bx-menu");
