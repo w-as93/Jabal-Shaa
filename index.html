@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>جبل شاع</title>
+    <link rel="website icon" type="png" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <div class="logo-img">
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+
+            <div class="logo-name">
+                <h1 class="logo-name-main" data-translate="LogoNameMain">مؤسسة جبل شــاع</h1>
+                <p class="logo-name-sub" data-translate="LogoNameSub">للإستثمار والتطوير العقاري</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <nav>
+                <a href="#home" class="nav_link" data-translate="HomePage">الصفحة الرئيسية</a>
+                <a href="#contact" class="nav_link" data-translate="PhonePage">اتصل بنا</a>
+            </nav>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="tabs">
+                <div class="tab" id="tab1" data-translate="TabAbout" onclick="showTab(1)">نبذة عنا</div>
+                <div class="tab" id="tab2" data-translate="TabMount" onclick="showTab(2)">جبل شاع</div>
+            </div>
+    
+            <div class="content">
+                <!-- نبذة عنا -->
+                <div class="content-item" id="content1">
+                    <div class="image">
+                        <img src="img/keys.jpg" alt="صورة تعبيرية" />
+                    </div>
+                    <div class="text">
+                        <h1 class="about-title" data-translate="AboutUs">نبذة عنا</h1>
+                        <div class="about-content">
+                            <p data-translate="AboutUsContent">تعد مؤسستنا واحدة من الجهات الرائدة في مجال تطوير العقارات، حيث نسعى إلى تقديم مشاريع عقارية متميزة تجمع بين الجودة العالية، التصاميم العصرية، والاستدامة. 
+                                <br>نعمل على تطوير المجتمعات السكنية، التجارية، والاستثمارية من خلال حلول مبتكرة تلبي تطلعات عملائنا وتواكب التطورات في القطاع العقاري.<br>
+
+                                نلتزم في مؤسستنا بأعلى معايير البناء والتخطيط العمراني، مع التركيز على تحقيق قيمة مستدامة لعملائنا ومستثمرينا.<br><br> <b>رؤيتنا</b> هي المساهمة في بناء مستقبل عمراني متطور يعكس طموحاتنا في الريادة والابتكار في عالم التطوير العقاري.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- سبب التسمية -->
+                <div class="content-item" id="content2">
+                    <div class="image-container">
+                        <img class="img" src="img/mount.png" alt="صورة 1">
+                        <img class="img" src="img/aseer.png" alt="صورة 2">
+                    </div>
+                    <div class="text">
+                        <h2 class="name-title" data-translate="MountShaa">جبل شاع</h2>
+                        <div class="name-content">
+                            <p data-translate="MountShaaContent1"><b>أولاً</b> : الجبال في المنطقة كانت نقطة البداية لرسم
+                                الشعار وذلك تلبية لاسم المؤسسة ودعماً لمجال
+                                عملها حيث تعبر الجبال بنفس الوقت عن التطور
+                                والعلو وهو ما يعكس خدمة الاستثمار والتطوير
+                                العقاري التي تقدمها المؤسسة.</p>
+                                <br>
+                            <p data-translate="MountShaaContent2"><b>ثانياً</b> : اعتماد من (قط العسيري) في هندسة الشعار
+                                وهو أحد الفنون التجريدية التي نشأت في منطقة
+                                عسير في السعودية، حيث تم رسم الجبال من خلاله
+                                الأمر الذي يقوي الرابط بين المؤسسة والمنطقة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-section">
+                <h2 class="title" data-translate="CallUs">-- اتصل بنا --</h2>
+                <!-- From Uiverse.io by pathikcomp --> 
+                <div class="card-contact">
+                    <div class="contact-icons">
+                    <p>0506026006</p>
+                    <a href="tel:966506026006" data-translate="Call">اتصل</a>
+                    <i class='bx bx-phone'></i>
+                    </div>
+                    <div class="contact-icons">
+                    <p>0506026006</p>
+                    <a href="https://wa.me/966506026006" target="_blank" data-translate="Sent">ارسل</a>
+                    <i class='bx bxl-whatsapp' ></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <h2 class="title" data-translate="FolllowUs">-- تابعنا --</h2>
+                    <!-- From Uiverse.io by pathikcomp --> 
+                <div class="card-social">
+                    <div class="social-icons">
+                    <p>@jabalshaa</p>
+                    <a href="https://snapchat.com/t/Kk00PdcL" target="_blank" data-translate="Follow">تابع</a>
+                    <i class='bx bxl-snapchat'></i>
+                    </div>
+                    <div class="social-icons">
+                    <p>@m.eaqar</p>
+                    <a href="https://www.tiktok.com/@m.eaqar?_t=ZS-8uWLcPOoe6k&_r=1" target="_blank" data-translate="Follow">تابع</a>
+                    <i class='bx bxl-tiktok' ></i>
+                    </div>
+                    <div class="social-icons">
+                    <p>@Instagram</p>
+                    <a href="https://www.instagram.com/jabalshaa?igsh=Z2hlOXJrdGNzc3Bi" target="_blank" data-translate="Follow">تابع</a>
+                    <i class='bx bxl-instagram'></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="location-content">
+                <i class='bx bx-map location-icons'></i>
+                <p class="location" data-translate="LocationUs">المنطقة الشرقية - الدمام</p>
+            </div>
+
+            <div class="setting-content">
+                <div class="mode">
+                    <div class="container">
+                        <label class="toggle" for="switch">
+                            <input id="switch" class="input" type="checkbox">
+                            <div class="icon icon--moon">
+                                <svg height="27" width="27" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        
+                            <div class="icon icon--sun">
+                                <svg height="27" width="27" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="lang-container">
+                    <select>
+                        <option value="ar" class="lang-text" data-translate="Arabic" selected>العربية</option>
+                        <option value="en" class="lang-text" data-translate="English">الإنجليزية</option>
+                    </select>
+                </div> 
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
