@@ -64,6 +64,21 @@ const setLanguage = (language) => {
         element.innerHTML = translations[language][translationKey] 
     });
     document.dir = language === "ar" ? "rtl" : "ltr";
+
+        // تحديث الشعار عند تغيير اللغة
+        let logoImg = document.getElementById("logo");
+        let logoText = document.getElementById("logo-name-main");
+        let logoSubText = document.getElementById("logo-name-sub");
+    
+        if (language === "en") {
+            logoImg.src = "img/logo.png"; // صورة بدون نص
+            logoText.classList.remove("hidden"); // إظهار النص
+            logoSubText.classList.remove("hidden");
+        } else {
+            logoImg.src = "img/LogoAr.png"; // صورة مع النص بالعربية
+            logoText.classList.add("hidden"); // إخفاء النص
+            logoSubText.classList.add("hidden");
+        }
 };
 
 // لتفعيل زر المنيو
